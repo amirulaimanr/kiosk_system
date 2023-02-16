@@ -1,0 +1,148 @@
+/* CSS for styling the page and table */
+html, body{
+    min-height:100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #00140d, #08291e, #073f2d, #04573b, #00704a);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+
+header {
+    font-family: 'Raleway', sans-serif;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+header nav a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.logout-button {
+    
+    float: right;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:hover,:visited{
+    background-color: black;
+    opacity: 0.2;
+    color: white;
+    
+}
+
+main {
+    margin: 20px;
+}
+
+.menu {
+  display: block;
+  margin-bottom: 70px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+  
+  form input[type="text"],
+  form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 2px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 40px 0 40px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+  }
+  
+  table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #212e22;
+    
+}
+
+table button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  table button:hover {
+    background-color: #45a049;
+  }
+  
+  table button.delete-button {
+    background-color: #f44336;
+  }
+  
+  table button.delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+footer {
+    
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+}
+
+#menu-table img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+}

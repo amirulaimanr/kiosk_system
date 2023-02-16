@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/receipt.css">
+    
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <div class="logo-container">
+        <div class="starbucks_logo">
+            <img src="/img/starbucks_logo.png" alt="Starbucks logo">
+        </div>
+    </div>
+
+    
+
+    <div class="headline-container">
+        <div class="headline">
+            <h1> Order Confirmation </h1>
+
+            <div class="logo-container">
+                <div class="purchase_logo">
+                    <img src="/img/purchase.png" alt="Purchase logo">
+                </div>
+            </div>
+
+            <h2>Thank you for your purchase!</h2> 
+            <h2>Your order details are as follows:</h2>
+        </div>
+    </div>
+
+    
+
+    <div id="confirmation-page">
+        
+        <table>
+            <tr>
+                <th>Order Number</th>
+                <td id="order-number">42</td>
+                
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td id="date">2-Jan-2023</td>
+            </tr>
+            <tr>
+                <th>Payment Method</th>
+                <td id="payment-method">Tng E-wallet</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td id="total">RM 74.85</td>
+            </tr>
+        </table>
+        <br>
+        <button id="print-receipt">Print Receipt</button>
+    </div>
+
+</body>
+
+<!-- main js -->
+<script src="/js/receipt.js"></script>
+
+</html>

@@ -1,0 +1,12 @@
+[
+    {
+    "name": "Menu 1",
+    "price": "Item 1, Item 2, Item 3",
+    "imageUrl": "https://example.com/menu1.jpg"
+    },
+    {
+    "name": "Menu 2",
+    "price": "Item 1, Item 2, Item 3",
+    "imageUrl": "https://example.com/menu2.jpg"
+    }
+]

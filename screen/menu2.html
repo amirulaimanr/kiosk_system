@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="/css/menu.css">
+
+    <!-- custom js file link -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="/images/starbucks-logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#espresso">ESPRESSO AND COFFEE</a>
+            <a href="#frappucino">FRAPPUCINO</a>
+            <a href="#chocolate">CHOCOLATE AND TEA</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div class="back-button">
+            <a href="/screen/admin_menu.html"><img src="/images/back.png" alt="back-button"></a>
+        </div>
+
+        
+
+        <div class="cart-items-container">
+            
+            <div class="total">
+                    <div class="total-price">Total Price:</div>
+                    <div class="final-price">RM0</div>           
+            </div>
+            <a href="/screen/payment.html" class="btn">checkout now</a>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!--  espresso and coffee section starts -->
+
+
+    <section class="espresso" id="espresso">
+
+        <h1 class="heading"> espresso and <span>coffee</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="/images/menu-1.png" class="product-img" alt="">
+                <div class="product-title"><h3>asian dolce latte</h3></div>
+                <div class="price">RM 18.55</div>
+                <a href="#popup1" class="btn" id="btn1">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-2.png" class="product-img" alt="">
+                <div class="product-title"><h3>iced asian dolce latte</h3></div>
+                <div class="price">RM 18.55</div>
+                <a href="#popup2" class="btn" id="btn2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-3.png" class="product-img" alt="">
+                <h3>caramel machiato</h3>
+                <div class="price">RM 18.00</div>
+                <a href="#popup3" class="btn" id="btn3">add to cart</a>
+            </div>
+
+            <div class="box" data-name="m-4">
+                <img src="/images/menu-4.png" class="product-img" alt="">
+                <h3>iced caramel machiato</h3>
+                <div class="price">RM 18.00</div>
+                <a href="#popup4" class="btn" id="btn4">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-5.png" class="product-img" alt="">
+                <h3>coffee mocha</h3>
+                <div class="price">RM 17.50</div>
+                <a href="#popup5" class="btn" id="btn5">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-6.png" class="product-img" alt="">
+                <h3>iced coffee mocha</h3>
+                <div class="price">RM 17.50</div>
+                <a href="#popup6" class="btn" id="btn6">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-7.png" class="product-img" alt="">
+                <h3>coffee latte</h3>
+                <div class="price">RM 15.90</div>
+                <a href="#popup7" class="btn" id="btn7">add to cart</a>
+            </div>
+
+           
+
+        </div>
+
+    </section>
+
+    <!--  espresso and coffee section ends -->
+
+    <!-- espresso and coffee popup section starts -->
+
+    <!-- popup 1 -->
+
+    <div class="popup" id="popup1">
+        <span class="fas fa-times" id="close1"></span>
+            <img src="/images/menu-1.png" alt="">
+            <h2>Asian Dolce Latte</h2>
+            <p>An extra shot of espresso layered with dolce sauce and steamed milk. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            <!--
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>-->
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="pop-btn btn" id="close-popup1" type="button">Add to cart</button>
+        </div>
+
+    <!-- popup 2 -->
+
+    <div class="popup" id="popup2">
+        <span class="fas fa-times" id="close2"></span>
+            <img src="/images/menu-2.png" alt="">
+            <h2>Iced Asian Dolce Latte</h2>
+            <p>An extra shot of espresso layered with dolce sauce, milk and topped with ice.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            <!--
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>-->
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup2" type="button">Add to cart</button>
+        </div>
+
+    <!-- popup 3 -->
+
+    <div class="popup" id="popup3">
+        <span class="fas fa-times" id="close3"></span>
+            <img src="/images/menu-3.png" alt="">
+            <h2>Caramel Machiato</h2>
+            <p>Steamed milk and sweet vanilla syrup topped with rich espresso and caramel drizzle.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            <!--
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>-->
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup3" type="button">Add to cart</button>
+        </div>
+
+     <!-- popup 4 -->
+
+    <div class="popup" id="popup4">
+        <span class="fas fa-times" id="close4"></span>
+            <img src="/images/menu-4.png" alt="">
+            <h2>Iced Caramel Machiato</h2>
+            <p>Milk and sweet vanilla syrup topped with rich espresso, caamel drizzle and topped with ice.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            <!--
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>-->
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup4" type="button">Add to cart</button>
+        </div>
+
+     <!-- popup 5 -->
+
+     <div class="popup" id="popup5">
+        <span class="fas fa-times" id="close5"></span>
+            <img src="/images/menu-5.png" alt="">
+            <h2>Caffé Mocha</h2>
+            <p>Our rich, full-bodied espresso combined with bittersweet mocha sauce and steamed milk. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            <!--
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>-->
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup5" type="button">Add to cart</button>
+        </div>
+
+         <!-- popup 6 -->
+
+    <div class="popup" id="popup6">
+        <span class="fas fa-times" id="close6"></span>
+            <img src="/images/menu-6.png" alt="">
+            <h2>Iced Caffé Mocha</h2>
+            <p>Our rich,full -bodied espresso combined with bittersweet mocha sauce, milk and topped with ice. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            <!--
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>-->
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup6" type="button">Add to cart</button>
+        </div>
+
+         <!-- popup 7 -->
+
+    <div class="popup" id="popup7">
+        <span class="fas fa-times" id="close7"></span>
+            <img src="/images/menu-7.png" alt="">
+            <h2>Caffé Latte</h2>
+            <p>Rich espresso, steamed milk and a dollop of foam.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            <!--
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>-->
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup7" type="button">Add to cart</button>
+        </div>
+
+       
+
+
+
+    <!-- espresso and coffee popup section ends -->
+
+    <!-- frappucino section starts -->
+
+    <section class="frappucino" id="frappucino">
+
+        <h1 class="heading"> frappucino </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="/images/menu-13.png" alt="">
+                <h3>caramel frappucino</h3>
+                <div class="price">RM 17.50</div>
+                <a href="#popup13" class="btn" id="btn13">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-14.png" alt="">
+                <h3>asian dolce frappucino</h3>
+                <div class="price">RM 19.60</div>
+                <a href="#popup14" class="btn" id="btn14">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-15.png" alt="">
+                <h3>caramel machiato frappucino</h3>
+                <div class="price">RM 20.65</div>
+                <a href="#popup15" class="btn" id="btn15">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-16.png" alt="">
+                <h3>caramel cream frappucino</h3>
+                <div class="price">RM 16.45</div>
+                <a href="#popup16" class="btn" id="btn16">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-17.png" alt="">
+                <h3>vanilla cream frappucino</h3>
+                <div class="price">RM 16.45</div>
+                <a href="#popup17" class="btn" id="btn17">add to cart</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- frappucino section ends -->
+
+    <!-- frappucino popup section starts -->
+
+    <!-- popup 13 -->
+
+    <div class="popup" id="popup13">
+        <span class="fas fa-times" id="close13"></span>
+            <img src="/images/menu-13.png" alt="">
+            <h2>Caramel Frappucino</h2>
+            <p>Caramel syrup meets coffee, milk and ice for a rendezvous in the blender. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+            <!--
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            -->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup13" type="button">Add to cart</button>
+        </div>
+
+    <!-- popup 14 -->
+
+    <div class="popup" id="popup14">
+        <span class="fas fa-times" id="close14"></span>
+            <img src="/images/menu-14.png" alt="">
+            <h2>Asian Dolce Frappuccino</h2>
+            <p>A perfect blend of Double-shot Starbucks Espresso Roast with dolce sauce and milk. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+            <!--
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            -->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup14" type="button">Add to cart</button>
+        </div>
+
+        <!-- popup 15 -->
+
+    <div class="popup" id="popup15">
+        <span class="fas fa-times" id="close15"></span>
+            <img src="/images/menu-15.png" alt="">
+            <h2>Caramel Macchiato Frappuccino</h2>
+            <p>Smooth milk meets ice and sweet Vanilla syrup for a rendezvous in a blender, topped with caramel drizzle and a bold shot of espresso. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+            <!--
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            -->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup15" type="button">Add to cart</button>
+        </div>
+
+        <!-- popup 16 -->
+
+    <div class="popup" id="popup16">
+        <span class="fas fa-times" id="close16"></span>
+            <img src="/images/menu-16.png" alt="">
+            <h2>Caramel Cream Frappuccino</h2>
+            <p>Blended with milk and ice, the homey flavour of caramel takes a delightfully refreshing turn. No whipped cream to be served</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+            <!--
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            -->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup16" type="button">Add to cart</button>
+        </div>
+
+        <!-- popup 17 -->
+
+    <div class="popup" id="popup17">
+        <span class="fas fa-times" id="close17"></span>
+            <img src="/images/menu-17.png" alt="">
+            <h2>Vanilla Cream Frappuccino</h2>
+            <p>This rich and creamy blend of vanilla bean, milk and ice takes va-va-vanilla flavor to another level. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+            <!--
+            <p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>
+
+            -->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup17" type="button">Add to cart</button>
+        </div>
+
+        
+
+
+
+    <!-- frappucino popup section ends -->
+
+    <!-- chocolate and tea section starts -->
+
+    <section class="chocolate" id="chocolate">
+
+        <h1 class="heading"> chocolate and <span>tea</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="/images/menu-26.png" alt="">
+                <h3>green tea latte</h3>
+                <div class="price">RM 18.00</div>
+                <a href="#popup26" class="btn" id="btn26">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-27.png" alt="">
+                <h3>iced green tea latte</h3>
+                <div class="price">RM 18.00</div>
+                <a href="#popup27" class="btn" id="btn27">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-28.png" alt="">
+                <h3>signature chocolate</h3>
+                <div class="price">RM 15.90</div>
+                <a href="#popup28" class="btn" id="btn28">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-29.png" alt="">
+                <h3>iced signature chocolate</h3>
+                <div class="price">RM 15.90</div>
+                <a href="#popup29" class="btn" id="btn29">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-30.png" alt="">
+                <h3>hazelnut chocolate</h3>
+                <div class="price">RM 16.95</div>
+                <a href="#popup30" class="btn" id="btn30">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-31.png" alt="">
+                <h3>iced hazelnut chocolate</h3>
+                <div class="price">RM 16.95</div>
+                <a href="#popup31" class="btn" id="btn31">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-32.png" alt="">
+                <h3>caramel chocolate</h3>
+                <div class="price">RM 16.95</div>
+                <a href="#popup32" class="btn" id="btn32">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="/images/menu-33.png" alt="">
+                <h3>iced caramel chocolate</h3>
+                <div class="price">RM 16.95</div>
+                <a href="#popup33" class="btn" id="btn33">add to cart</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- chocolate and tea section ends -->
+
+    <!-- chocolate and tea popup section starts -->
+
+    <!-- popup 26 -->
+
+    <div class="popup" id="popup26">
+        <span class="fas fa-times" id="close26"></span>
+            <img src="/images/menu-26.png" alt="">
+            <h2>Green Tea Latte</h2>
+            <p>Invigorating green tea and steamed milk.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup26" type="button">Add to cart</button>
+        </div>
+        <!-- popup 27 -->
+
+    <div class="popup" id="popup27">
+        <span class="fas fa-times" id="close27"></span>
+            <img src="/images/menu-27.png" alt="">
+            <h2>Iced Green Tea Latte</h2>
+            <p>Invigorating green tea with milk and topped with ice.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup27" type="button">Add to cart</button>
+        </div>
+
+        <!-- popup 28 -->
+
+    <div class="popup" id="popup28">
+        <span class="fas fa-times" id="close28"></span>
+            <img src="/images/menu-28.png" alt="">
+            <h2>Signature Chocolate</h2>
+            <p>Four cocoas and fresh steamed milk topped with chocolate powder. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup28" type="button">Add to cart</button>
+        </div>
+
+        <!-- popup 29 -->
+
+    <div class="popup" id="popup29">
+        <span class="fas fa-times" id="close29"></span>
+            <img src="/images/menu-29.png" alt="">
+            <h2>Iced Signature Chocolate</h2>
+            <p>Four cocoas and milk topped with ice and chocolate powder. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup29" type="button">Add to cart</button>
+        </div>
+
+        <!-- popup 30 -->
+
+    <div class="popup" id="popup30">
+        <span class="fas fa-times" id="close30"></span>
+            <img src="/images/menu-30.png" alt="">
+            <h2>Hazelnut Chocolate</h2>
+            <p>Four cocoas, hazelnut syrup and fresh steamed milk. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup30" type="button">Add to cart</button>
+        </div>
+
+        <!-- popup 31 -->
+
+    <div class="popup" id="popup31">
+        <span class="fas fa-times" id="close31"></span>
+            <img src="/images/menu-31.png" alt="">
+            <h2>Iced Hazelnut Chocolate</h2>
+            <p>Four cocoas, hazelnut syrup and milk topped with ice and chocolate powder. No whipped cream to be served</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup31" type="button">Add to cart</button>
+        </div>
+
+    <!-- popup 32 -->
+
+    <div class="popup" id="popup32">
+        <span class="fas fa-times" id="close32"></span>
+            <img src="/images/menu-32.png" alt="">
+            <h2>Caramel Chocolate</h2>
+            <p>A traditional hot chocolate beverage made with rich chocolate sauce, caramel and steamed milk. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup32" type="button">Add to cart</button>
+        </div>
+
+    <!-- popup 33 -->
+
+    <div class="popup" id="popup33">
+        <span class="fas fa-times" id="close33"></span>
+            <img src="/images/menu-33.png" alt="">
+            <h2>Iced Caramel Chocolate</h2>
+            <p>A traditional chocolate beverage made with rich chocolate sauce, caramel, milk and topped with ice. No whipped cream to be served.</p>
+            <p>select variation</p><br>
+            <div class="variation">
+                <form>
+                    <input type="radio" name="variation" id="venti" value="venti">
+                    <label for="venti">Venti (20 oz)</label><br>
+                    <input type="radio" name="variation" id="grande" value="grande">
+                    <label for="grande">Grande (16 oz)</label><br>
+                </form>
+            </div>
+
+            <!--<p>Choice of espresso</p><br>
+            <div class="choice-espresso">
+                <form>
+                    <input type="radio" name="choice-espresso" id="espresso" value="espresso">
+                    <label for="espresso">Espresso</label><br>
+                    <input type="radio" name="choice-espresso" id="decaf" value="decaf">
+                    <label for="decaf">Decaf espresso</label><br>
+                </form>
+            </div>-->
+
+            
+            <p>Choice of milk</p><br>
+            <div class="milk">
+                <form>
+                    <input type="radio" name="milk" id="whole" value="whole">
+                    <label for="whole">Whole</label><br>
+                    <input type="radio" name="milk" id="low-fat" value="low-fat">
+                    <label for="low-fat">Low fat</label><br>
+                    <input type="radio" name="milk" id="soy" value="soy">
+                    <label for="soy">Soy</label><br>
+                    <input type="radio" name="milk" id="almond" value="almond">
+                    <label for="almond">Almond</label><br>
+                </form>
+            </div>
+            
+            <p>Special instruction</p>
+            <div class="specialInstruction">
+                <form>
+                    <input class="instruction" type="text" id="instruction" name="instruction" placeholder="e.g. Extra shot"><br>
+                </form>
+            </div>
+
+            
+            <button class="btn" id="close-popup33" type="button">Add to cart</button>
+        </div>
+
+    
+
+
+    <!-- chocolate and tea popup section ends -->
+
+    
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="share">
+
+            <a href="https://www.facebook.com/StarbucksMalaysia/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/starbucks" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/mystarbucks/?hl=en" class="fab fa-instagram"></a>
+            <a href="https://www.pinterest.com/starbucks/" class="fab fa-pinterest"></a>
+
+        </div>
+
+        <div class="credit">created by <span>divine tech</span> | all right reserved</div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+</html>
